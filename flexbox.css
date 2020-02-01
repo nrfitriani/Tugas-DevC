@@ -1,0 +1,47 @@
+body{
+    background: orange;
+}
+
+.flex-parent{
+    height: 400px;
+    width: 300px;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+    border: 2px solid black;
+    align-content: flex-end;
+    flex-flow: row wrap;
+    flex-direction: column;
+}
+
+.flex-child{
+    color: black;
+    background: white;
+    border: 2px solid black;
+    flex-basis: 50px;
+}
+
+#satu{
+    /*order: 2;*/
+    flex-shrink: 2;
+    flex-basis: 100px;
+}
+
+#dua{
+    /*order: 2;*/
+    flex-shrink: 2;
+    align-self: center;
+}
+
+#tiga{
+    /*order: 2;*/
+    flex-shrink: 1;
+    align-self: center;
+}
+
+#empat{
+    /*order: 2;*/
+    flex-shrink: 1;
+}
